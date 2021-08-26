@@ -3,6 +3,10 @@ const textarea = document.getElementById("textarea");
 
 textarea.focus();
 
+document.getElementById("enter").onclick = function () {
+  randomSelect();
+};
+
 textarea.addEventListener("keyup", (e) => {
   createTags(e.target.value);
 
@@ -12,6 +16,8 @@ textarea.addEventListener("keyup", (e) => {
     }, 10);
 
     randomSelect();
+  } else {
+    return null;
   }
 });
 
@@ -32,7 +38,7 @@ function createTags(input) {
 }
 
 function randomSelect() {
-  const times = 30;
+  const times = 40;
 
   const interval = setInterval(() => {
     const randomTag = pickRandomTag();
