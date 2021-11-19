@@ -21,7 +21,13 @@ h3 {
 .container {
   width: 500px;
 }
-
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #ffffff;
+}
 textarea {
   border: none;
   display: block;
