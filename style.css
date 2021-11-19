@@ -81,12 +81,17 @@ button {
     width: 300px;
   }
   button {
-    font-size: 14px;
+    font-size: 16px;
     width: 25%;
     padding: 6px 9px;
     margin: 3px;
   }
   h3 {
     font-size: 16px;
+  }
+  .tag {
+    padding: 5px 20px;
+    margin: 0px 5px 10px 0;
+    font-size: 14px;
   }
 }
